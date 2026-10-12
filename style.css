@@ -398,6 +398,23 @@ strong {
     margin-top: 4px;
 }
 
+.gomi-points {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    margin-top: 8px;
+}
+
+.gomi-points li {
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 100px;
+    background-color: rgba(212, 168, 67, 0.12);
+    border: 1px solid rgba(212, 168, 67, 0.35);
+}
+
 .schedule-notice {
     font-size: 0.8rem;
     color: var(--color-text-muted);
