@@ -569,6 +569,10 @@ textarea.form-control {
     min-height: 100px;
 }
 
+.sub-detail textarea.form-control {
+    min-height: 72px;
+}
+
 /* 参加人数 */
 .count-grid {
     display: grid;
@@ -616,6 +620,16 @@ textarea.form-control {
 .fee-summary strong {
     font-size: 1.15rem;
     margin-left: 4px;
+}
+
+/* 現金準備の案内 */
+.cash-note {
+    margin-top: 10px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    border-radius: var(--radius-sm);
+    background-color: rgba(212, 168, 67, 0.1);
+    border: 1px solid rgba(212, 168, 67, 0.35);
 }
 
 /* 条件付き詳細入力 */
@@ -829,8 +843,13 @@ textarea.form-control {
     border-color: var(--color-error);
 }
 
-.form-group.error .error-text {
+.form-group.error > .error-text,
+.sub-detail.error .error-text {
     display: block;
+}
+
+.sub-detail.error .form-control {
+    border-color: var(--color-error);
 }
 
 .form-group.error .checkbox-custom,

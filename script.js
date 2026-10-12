@@ -55,7 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
             radio.addEventListener('change', () => {
                 const show = document.querySelector(`input[name="${name}"]:checked`)?.value === showValue;
                 detailEl.classList.toggle('hidden', !show);
-                if (!show) detailEl.querySelector('input').value = '';
+                if (!show) {
+                    detailEl.querySelector('input, textarea').value = '';
+                    detailEl.classList.remove('error');
+                }
             });
         });
     }
@@ -104,6 +107,12 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = setError(first, !radioChecked(name)) && isValid;
         });
 
+        // アレルギー「あり」の場合は内容を必須にする
+        const allergyTextMissing = radioChecked('allergy')?.value === 'あり'
+            && !document.getElementById('allergyText').value.trim();
+        allergyDetail.classList.toggle('error', allergyTextMissing);
+        if (allergyTextMissing) isValid = false;
+
         const agree1 = document.getElementById('agree1');
         const agree2 = document.getElementById('agree2');
         isValid = setError(agree1, !agree1.checked || !agree2.checked) && isValid;
@@ -128,6 +137,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    document.getElementById('allergyText').addEventListener('input', function () {
+        if (this.value.trim()) allergyDetail.classList.remove('error');
+    });
+
     ['agree1', 'agree2'].forEach(id => {
         document.getElementById(id).addEventListener('change', () => {
             const agree1 = document.getElementById('agree1');
@@ -141,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
 
         if (!validateForm()) {
-            const firstError = document.querySelector('.form-group.error');
+            const firstError = document.querySelector('.form-group.error, .sub-detail.error');
             if (firstError) {
                 firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
@@ -212,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCount();
         allergyDetail.classList.add('hidden');
         exhibitDetail.classList.add('hidden');
-        document.querySelectorAll('.form-group').forEach(group => group.classList.remove('error'));
+        document.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
 
         successMessage.classList.add('hidden');
         formCard.classList.remove('hidden');

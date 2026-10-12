@@ -158,6 +158,7 @@
         <section class="notice-card" aria-label="ご注意事項">
             <h2 class="section-title">⚠️ ご注意事項</h2>
             <ul class="notice-list">
+                <li>💴 参加費（大人4,000円）は<strong>当日、現金で</strong>ご準備ください。できるだけおつりのないようにお願いします。</li>
                 <li>📷 当日撮影した写真・動画は、コミュニティ内などで共有される場合があります。</li>
                 <li>🙏 参加できなくなった場合は、なるべく早めに運営までご連絡ください。</li>
                 <li data-gomi>🧹 ゴミ拾いから参加される方には、その後の買い出しや会場準備をお願いする場合があります。</li>
@@ -223,6 +224,7 @@
                     </div>
                     <p id="childNotice" class="inline-notice hidden">👨‍👩‍👧 お子さまの参加は保護者同伴でお願いします。</p>
                     <p class="fee-summary">当日の参加費：<strong id="feeTotal">4,000円</strong></p>
+                    <p class="cash-note">💴 参加費は<strong>当日、現金で</strong>集金します。できるだけおつりのないようにご準備ください。</p>
                 </div>
 
                 <!-- 参加タイミング（ゴミ拾い開催時のみ表示） -->
@@ -285,10 +287,11 @@
                         </label>
                     </div>
                     <div id="allergyDetail" class="sub-detail hidden">
-                        <label for="allergyText" class="form-label-sub">アレルギーの詳細を教えてください</label>
-                        <input type="text" id="allergyText" name="allergyText" class="form-control form-control-plain" placeholder="例：エビ、カニ、卵など">
+                        <label for="allergyText" class="form-label-sub">何のアレルギーか教えてください <span class="required">必須</span></label>
+                        <textarea id="allergyText" name="allergyText" class="form-control form-control-plain" rows="2" placeholder="例：エビ・カニ（本人）、卵（同伴の子ども）など"></textarea>
+                        <span id="allergyTextError" class="error-text">アレルギーの内容を入力してください。</span>
                     </div>
-                    <span class="error-text">食物アレルギーの有無を選択してください。</span>
+                    <span id="allergyError" class="error-text">食物アレルギーの有無を選択してください。</span>
                 </div>
 
                 <!-- 展示・物販 -->
