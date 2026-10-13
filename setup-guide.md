@@ -185,7 +185,7 @@ const GOMI_ENABLED = false;
 
 ## GitHub Pages で公開する方法
 
-1. GitHubに新しいリポジトリを作成（例：`web3tokai-yearendparty`）
+1. GitHubに新しいリポジトリを作成（例：`teamtokai-yearendparty`）
 2. `index.html`、`style.css`、`script.js`、`README.md` をアップロード
 3. **Settings → Pages → Build and deployment → Branch** で `main` を選択して「Save」
 4. 数分後にURLが表示されます → このURLをLINEなどで共有！

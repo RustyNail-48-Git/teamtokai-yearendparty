@@ -1,6 +1,6 @@
-# web3tokai-yearendparty
+# teamtokai-yearendparty
 
-11/29（日）に開催される web3tokai 大忘年会（ガーデン伏見・リリーバンケット）の参加申込みフォームです。
+11/29（日）に開催される teamtokai 大忘年会（ガーデン伏見・リリーバンケット）の参加申込みフォームです。
 
 ## 技術スタック
 - フロントエンド: HTML5 / CSS3 (Vanilla) / JavaScript (Vanilla)
