@@ -312,6 +312,7 @@ strong {
 }
 
 .fee-tag {
+    white-space: nowrap;
     font-size: 0.75rem;
     font-weight: 700;
     padding: 1px 10px;
@@ -521,6 +522,9 @@ strong {
 
 .required,
 .optional {
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 1.5;
     font-size: 0.68rem;
     font-weight: 700;
     padding: 1px 8px;
