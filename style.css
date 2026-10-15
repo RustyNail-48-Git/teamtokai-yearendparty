@@ -177,10 +177,18 @@ strong {
 
 /* ＆ゴミ拾いボランティア（希望者のみ）：控えめな補足表記 */
 .hero-plus {
-    margin-top: 10px;
+    margin-top: 12px;
     font-family: var(--font-hand);
-    font-size: 1.2rem;
-    color: var(--color-text-muted);
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: var(--color-teal);
+    text-shadow: 2px 2px 0 var(--color-teal-light);
+}
+
+.hero-plus .optional-tag {
+    font-size: 0.8rem;
+    text-shadow: none;
+    vertical-align: 0.25em;
 }
 
 .nowrap {
@@ -1094,6 +1102,10 @@ textarea.form-control {
     }
 
     .hero-badge {
+        font-size: 1.35rem;
+    }
+
+    .hero-plus {
         font-size: 1.35rem;
     }
 
