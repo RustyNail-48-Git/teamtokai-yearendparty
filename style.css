@@ -171,7 +171,6 @@ strong {
     -webkit-text-stroke: 2px var(--color-ink);
     paint-order: stroke fill;
     text-shadow: 5px 5px 0 var(--color-yellow);
-    transform: rotate(-2deg);
 }
 
 /* ＆ゴミ拾いボランティア（希望者のみ）：控えめな補足表記 */
