@@ -4,7 +4,7 @@
 
 // ========== ゴミ拾いの開催設定 ==========
 // ゴミ拾いが中止になった場合は false に変更してください。
-// 当日の流れ・注意事項・参加タイミングの選択肢がまとめて非表示になります。
+// タイトルの「＆ゴミ拾いボランティア」・イベント情報・当日の流れ・注意事項・フォームの選択肢がまとめて非表示になります。
 const GOMI_ENABLED = true;
 
 // ========== Google Apps Script URL ==========
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== ゴミ拾い表示切り替え ==========
     if (!GOMI_ENABLED) {
         document.querySelectorAll('[data-gomi]').forEach(el => el.remove());
+        document.title = document.title.replace('＆【希望者のみ】ゴミ拾いボランティア', ' ');
     }
 
     // ========== 参加人数・参加費表示 ==========

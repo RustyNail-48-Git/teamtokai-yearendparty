@@ -165,6 +165,51 @@ strong {
     text-shadow: 3px 3px 0 var(--color-teal-light);
 }
 
+/* ＆ゴミ拾いボランティア（希望者のみ） */
+.hero-plus {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px 8px;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: var(--color-teal-light);
+    border: var(--border-thin);
+    border-radius: 999px;
+    box-shadow: var(--shadow-pop-sm);
+    transform: rotate(-1.5deg);
+}
+
+.hero-plus-amp {
+    font-family: var(--font-hand);
+    font-size: 1.4rem;
+    line-height: 1;
+    color: var(--color-coral);
+}
+
+.hero-plus-tag,
+.optional-tag {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: var(--font-main);
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1px 10px;
+    border-radius: 999px;
+    border: 1.5px solid var(--color-ink);
+    background-color: var(--color-yellow);
+    color: var(--color-ink);
+    vertical-align: middle;
+}
+
+.hero-plus-text {
+    font-family: var(--font-hand);
+    font-size: 1.15rem;
+    white-space: nowrap;
+}
+
 .hero-subtitle {
     margin-top: 6px;
     font-family: var(--font-hand);
@@ -421,6 +466,10 @@ strong {
     flex-wrap: wrap;
     gap: 6px 8px;
     margin-top: 8px;
+}
+
+.info-item-gomi .info-icon {
+    background-color: var(--color-teal-light) !important;
 }
 
 .gomi-points li {
