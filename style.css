@@ -150,7 +150,6 @@ strong {
     border-width: 3px;
     box-shadow: var(--shadow-pop);
     margin-bottom: 22px;
-    transform: rotate(-3deg);
 }
 
 .hero-title {
@@ -232,7 +231,6 @@ strong {
     box-shadow: var(--shadow-pop-sm);
     font-weight: 700;
     font-size: 0.95rem;
-    transform: rotate(1.5deg);
 }
 
 /* ---------- Cards Layout ---------- */
