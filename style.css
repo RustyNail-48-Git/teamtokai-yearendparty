@@ -175,30 +175,18 @@ strong {
     transform: rotate(-2deg);
 }
 
-/* ＆ゴミ拾いボランティア（希望者のみ） */
+/* ＆ゴミ拾いボランティア（希望者のみ）：控えめな補足表記 */
 .hero-plus {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 6px 8px;
-    margin-top: 12px;
-    padding: 8px 16px;
-    background-color: var(--color-teal-light);
-    border: var(--border-thin);
-    border-radius: 999px;
-    box-shadow: var(--shadow-pop-sm);
-    transform: rotate(-1.5deg);
-}
-
-.hero-plus-amp {
+    margin-top: 10px;
     font-family: var(--font-hand);
-    font-size: 1.4rem;
-    line-height: 1;
-    color: var(--color-coral);
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
 }
 
-.hero-plus-tag,
+.nowrap {
+    white-space: nowrap;
+}
+
 .optional-tag {
     display: inline-block;
     white-space: nowrap;
@@ -212,12 +200,6 @@ strong {
     background-color: var(--color-yellow);
     color: var(--color-ink);
     vertical-align: middle;
-}
-
-.hero-plus-text {
-    font-family: var(--font-hand);
-    font-size: 1.15rem;
-    white-space: nowrap;
 }
 
 .hero-subtitle {
