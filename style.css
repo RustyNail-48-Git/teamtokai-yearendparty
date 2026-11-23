@@ -465,6 +465,56 @@ strong {
     margin-top: 8px;
 }
 
+/* ゴミ拾いルート */
+.gomi-route {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.gomi-route small {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    margin-left: 4.2em;
+}
+
+.route-tag {
+    display: inline-block;
+    min-width: 3.6em;
+    text-align: center;
+    font-family: var(--font-alt, var(--font-main));
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 1px 8px;
+    margin-right: 4px;
+    border-radius: 999px;
+    border: 1.5px solid var(--color-ink);
+    color: #ffffff;
+}
+
+.route-start { background-color: #4a6cf7; }
+.route-goal { background-color: var(--color-coral); }
+
+.route-map {
+    display: block;
+    margin-top: 12px;
+    border: var(--border-thin);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-pop-sm);
+}
+
+.route-map img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .info-item-gomi .info-icon {
     background-color: var(--color-teal-light) !important;
 }
